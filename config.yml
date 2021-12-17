@@ -1,4 +1,4 @@
-token: "Pg75npEXZcGy5wjO"           # Lichess OAuth2 Token
+token: "lip_60dcKAHZCyemW8CxmHbB"           # Lichess OAuth2 Token
 url: "https://lichess.org/"  # Lichess base URL
 
 engine:                      # Engine settings
@@ -24,7 +24,7 @@ engine:                      # Engine settings
 # engine_options:            # Any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # Arbitrary UCI options passed to the engine
-    Move Overhead: 100       # Increase if your bot flags games too often
+    Move Overhead: 1000      # Increase if your bot flags games too often
     Threads: 7               # Max CPU threads the engine can use
     Hash: 200                # Max memory (in megabytes) the engine can allocate
 #   go_commands:             # Additional options to pass to the UCI go command
@@ -57,7 +57,7 @@ challenge:                   # Incoming challenges
   sort_by: "best"            # Possible values: "best", "first"
   accept_bot: true           # Accepts challenges coming from other bots
   only_bot: false            # Accept challenges by bots only
-  max_increment: 50          # Maximum amount of increment to accept a challenge. the max is 180. set to 0 for no increment
+  max_increment: 180         # Maximum amount of increment to accept a challenge. the max is 180. set to 0 for no increment
   min_increment: 0           # Minimum amount of increment to accept a challenge
   max_base: 315360000        # Maximum amount of base time to accept a challenge. the max is 315360000 (10 years)
   min_base: 0                # Minimum amount of base time to accept a challenge
