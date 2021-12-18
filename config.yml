@@ -25,7 +25,7 @@ engine:                      # Engine settings
 #   cpuct: 3.1
   uci_options:               # Arbitrary UCI options passed to the engine
     Move Overhead: 2000      # Increase if your bot flags games too often
-    Threads: 4               # Max CPU threads the engine can use
+    Threads: 7               # Max CPU threads the engine can use
 #   Hash: 200                # Max memory (in megabytes) the engine can allocate
 #   go_commands:             # Additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
@@ -49,7 +49,7 @@ move_overhead: 2000          # Increase if your bot flags games too often
 correspondence:
     move_time: 60            # Time in seconds to search in correspondence games
     checkin_period: 3600     # How often to check for opponent moves in correspondence games that have been disconnected from
-    disconnect_time: 5      # Time before disconnecting from a correspondence game
+    disconnect_time: 5       # Time before disconnecting from a correspondence game
     ponder: false            # Ponder in correspondence games the bot is connected to
 
 challenge:                   # Incoming challenges
@@ -73,7 +73,7 @@ challenge:                   # Incoming challenges
     - racingKings
     - threeCheck
   time_controls:             # Time controls to accept
-    - ultrabullet
+    - UltraBullet
     - bullet
     - blitz
     - rapid
