@@ -18,7 +18,7 @@ engine:                      # Engine settings
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
     min_weight: 1            # Does not select moves with weight below min_weight (min 0, max: 65535)
-    selection: "weighted_random"   # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
+    selection: "uniform_random"   # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
     max_depth: 8             # Half move max depth
 #   Clear Hash: true         # Clear the hash table
 # engine_options:            # Any custom command line params to pass to the engine
@@ -53,7 +53,7 @@ correspondence:
     ponder: false            # Ponder in correspondence games the bot is connected to
 
 challenge:                   # Incoming challenges
-  concurrency: 9             # Number of games to play simultaneously
+  concurrency: 3             # Number of games to play simultaneously
   sort_by: "best"            # Possible values: "best", "first"
   accept_bot: true           # Accepts challenges coming from other bots
   only_bot: false            # Accept challenges by bots only
