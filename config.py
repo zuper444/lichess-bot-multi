@@ -30,7 +30,7 @@ def load_config(config_file):
             if not isinstance(CONFIG["engine"][subsection[0]], subsection[1]):
                 raise Exception("´engine´ subsection {}".format(subsection[2]))
 
-        if CONFIG["token"] == "lip_rOb88uABovujXbsmK9ww":
+        if CONFIG["token"] == "xxxxxxxxxxxxxxxx":
             raise Exception("Your config.yml has the default Lichess API token. This is probably wrong.")
 
         if not os.path.isdir(CONFIG["engine"]["dir"]):
